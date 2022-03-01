@@ -1,8 +1,8 @@
-import { invoice } from '../invoices';
-import { plays } from '../plays';
-import { statement1 } from '../statement1';
-import { statement2 } from '../statement2';
-import { statement3 } from '../statement3';
+import { invoice } from '../common/invoices';
+import { plays } from '../common/plays';
+import { statement1 } from '../1/statement';
+import { statement2 } from '../2/statement';
+import { statement3 } from '../3/statement';
 
 test('statement1 test', () => {
   expect(statement1(invoice, plays)).toBe(

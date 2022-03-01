@@ -1,5 +1,5 @@
-import { Invoice } from './invoices';
-import { Plays } from './plays';
+import { Invoice } from '../common/invoices';
+import { Plays } from '../common/plays';
 
 export function statement1(invoice: Invoice, plays: Plays) {
   let totalAmount = 0;

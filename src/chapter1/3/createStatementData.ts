@@ -1,5 +1,5 @@
-import { Invoice, Performance } from './invoices';
-import { Plays } from './plays';
+import { Invoice, Performance } from '../common/invoices';
+import { Plays } from '../common/plays';
 import { PerformanceForData, StatementData } from './StatementData';
 
 export function createStatementData(invoice: Invoice, plays: Plays) {

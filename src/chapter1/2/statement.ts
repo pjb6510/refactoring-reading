@@ -1,5 +1,5 @@
-import { Invoice, Performance } from './invoices';
-import { Plays } from './plays';
+import { Invoice, Performance } from '../common/invoices';
+import { Plays } from '../common/plays';
 
 // 함수 추출하기!
 
