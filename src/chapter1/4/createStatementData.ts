@@ -45,7 +45,7 @@ class PerformanceCalculator {
   }
 }
 
-export function createStatementData(invoice: Invoice, plays: Plays) {
+export function createStatementData4(invoice: Invoice, plays: Plays) {
   function playFor(aPerformance: Performance) {
     return plays[aPerformance.playID];
   }

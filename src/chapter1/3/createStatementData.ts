@@ -2,7 +2,7 @@ import { Invoice, Performance } from '../common/invoices';
 import { Plays } from '../common/plays';
 import { PerformanceForData, StatementData } from '../common/StatementData';
 
-export function createStatementData(invoice: Invoice, plays: Plays) {
+export function createStatementData3(invoice: Invoice, plays: Plays) {
   function amountFor(aPerformance: PerformanceForData) {
     let result = 0;
 

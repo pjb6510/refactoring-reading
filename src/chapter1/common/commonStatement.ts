@@ -1,7 +1,7 @@
-import { Invoice } from '../common/invoices';
-import { Plays } from '../common/plays';
-import { StatementData } from '../common/StatementData';
-import { createStatementData } from './createStatementData';
+import { Invoice } from './invoices';
+import { Plays } from './plays';
+import { StatementData } from './StatementData';
+import { createStatementData3 } from '../3/createStatementData';
 
 function usd(aNumber: number | undefined) {
   if (aNumber == null) {
@@ -16,7 +16,7 @@ function usd(aNumber: number | undefined) {
 }
 
 export function htmlStatement(invoice: Invoice, plays: Plays) {
-  return renderHtml(createStatementData(invoice, plays));
+  return renderHtml(createStatementData3(invoice, plays));
 }
 
 export function renderHtml(data: StatementData) {
@@ -40,7 +40,11 @@ export function renderHtml(data: StatementData) {
   return result;
 }
 
-export function statement3(invoice: Invoice, plays: Plays) {
+export function commonStatement(
+  invoice: Invoice,
+  plays: Plays,
+  createStatementData: (invoice: Invoice, plays: Plays) => StatementData
+) {
   function renderPlainText(data: StatementData) {
     let result = `청구 내역 (고객명: ${data.customer})\n`;
     for (let perf of data.performances) {
