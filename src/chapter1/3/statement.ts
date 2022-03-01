@@ -1,6 +1,6 @@
 import { Invoice } from '../common/invoices';
 import { Plays } from '../common/plays';
-import { StatementData } from './StatementData';
+import { StatementData } from '../common/StatementData';
 import { createStatementData } from './createStatementData';
 
 function usd(aNumber: number | undefined) {

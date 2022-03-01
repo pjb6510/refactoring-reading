@@ -1,5 +1,5 @@
-import { Performance } from '../common/invoices';
-import { Play } from '../common/plays';
+import { Performance } from './invoices';
+import { Play } from './plays';
 
 export interface PerformanceForData extends Performance {
   play?: Play;
